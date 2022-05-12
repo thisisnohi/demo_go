@@ -1,0 +1,36 @@
+### 路由中间件
+GET http://{{server}}/v1/users/123?a=1&a=2
+
+### 获取JSON数据
+GET http://{{server}}/v1/users
+
+### 获取JSON数据 IndentedJSON 美化
+GET http://{{server}}/v1/users/allUsers
+
+### 获取JSON数据 json
+GET http://{{server}}/v1/json
+
+### 获取JSON数据 PureJSON
+GET http://{{server}}/v1/pureJson
+
+### 获取JSON数据 asciiJSON
+GET http://{{server}}/v1/asciiJSON
+
+
+### JSONP
+GET http://{{server}}/jsonp/secureJson
+
+### xml
+GET http://{{server}}/xml
+### users
+GET http://{{server}}/xml/users
+
+### html
+GET http://{{server}}/html
+### html/index
+GET http://{{server}}/html/index
+
+### 授权
+GET http://{{server}}/auth
+
+
