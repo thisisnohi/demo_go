@@ -1,0 +1,33 @@
+### 查询数据（多条记录）
+GET http://{{server}}/gorm/mulget?name=
+
+### 查询单笔
+GET http://{{server}}/gorm/get?name=李四
+
+### 添加数据  ,
+#  "production_time": 1613143214
+POST http://{{server}}/gorm/insert
+Content-Type: application/json
+
+{
+  "id": 2,
+  "number": "NO20220051401",
+  "category": "电器",
+  "name": "PC",
+  "made_in": "CN",
+  "production_time": "2022-05-01T14:43:14+08:00"
+}
+
+### 更新数据
+PUT http://{{server}}/sql/update
+Content-Type: application/json
+
+{
+  "name": "name111",
+  "age": 19,
+  "address": "这是地址222"
+}
+
+
+### 删除数据
+DELETE http://{{server}}/sql/delete

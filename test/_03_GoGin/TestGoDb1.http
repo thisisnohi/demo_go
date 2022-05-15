@@ -1,0 +1,32 @@
+### 查询数据（多条记录）
+GET http://{{server}}/sql/mulget?address=地址
+
+### 查询数据（单条记录）
+GET http://{{server}}/sql/get?name=name111
+
+###
+GET http://{{server}}/sql/get?name=李四
+
+### 添加数据
+POST http://{{server}}/sql/insert?name=n1&age=18&address=11111111
+Content-Type: application/json
+
+{
+  "name": "name111",
+  "age": 18,
+  "address": "这是地址"
+}
+
+### 更新数据
+PUT http://{{server}}/sql/update
+Content-Type: application/json
+
+{
+  "name": "name111",
+  "age": 19,
+  "address": "这是地址222"
+}
+
+
+### 删除数据
+DELETE http://{{server}}/sql/delete
